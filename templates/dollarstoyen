@@ -1,1 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert Dollars to Japanese Yen </title>
+  </head>
+  <body>
 
+    <form action='/dollarstoyen'>
+      Type in your dollar amount and we'll convert it to yen.<br>
+      <input type="txt" name="money">
+      <br><br>
+      <input type="submit">
+    </form>
+
+  </body>
+</html>
