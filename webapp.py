@@ -6,8 +6,13 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     return render_template('home.html')
     
-    
-    
+@app.route("/dollarstoyen")
+def render_dollarstoyen():  
+   money = float(request.args['money']) *112.15
+   reply: "Your amount in Japanese Yen is " + money 
+   
+   return render_template('dollarstoyen.html', response = reply)
+  
     
     
     
