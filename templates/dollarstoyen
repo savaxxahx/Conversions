@@ -7,7 +7,7 @@
 
     <form action='/dollarstoyen'>
       Type in your dollar amount and we'll convert it to yen.<br>
-      <input type="txt" name="money">
+      <input type="number" name="money">
       <br><br>
       <input type="submit">
     </form>
