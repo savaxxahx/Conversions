@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Convert inches to Centimeters </title>
-  </head>
-  <body>
+{% extends "layout.html" %}
+{% set active_page = "ITC" %}
 
+    {% block title %}Convert inches to Centimeters {% endblock %}
+  
+
+{% block content %} 
     <form action='/inchestocenti'>
       Type in your farenheit temperature and we'll convert it to celsuis.<br>
       <input type="number" name="height">
@@ -13,6 +13,5 @@
     </form>
       <h1> Convert Inches To Centimeters</h1>
     <p>{{ response }}</p>
-  </body>
-</html>
-
+    
+{% endblock %}
