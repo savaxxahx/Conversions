@@ -26,6 +26,5 @@ def render_inchestocenti():
     return render_template('inchestocenti.html', response = reply)
 
 
-    
-    if __name__=="__main__":
+if __name__=="__main__":
     app.run(debug=False, port=54321)
