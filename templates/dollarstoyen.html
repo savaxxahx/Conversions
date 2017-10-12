@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Convert Dollars to Japanese Yen </title>
-  </head>
-  <body>
+{% extends "layout.html" %}
+{% set active_page = "DTJ" %}
 
+    {% block title %}Convert Dollars to Japanese Yen{% end block %}
+
+{% block content %}
     <form action='/dollarstoyen'>
       Type in your dollar amount and we'll convert it to yen.<br>
       <input type="number" name="money">
@@ -13,5 +12,5 @@
     </form>
     <h1> Convert Dollars To Yen</h1>
     <p>{{ response }}</p>
-  </body>
-</html>
+ 
+ {% endblock %}  
