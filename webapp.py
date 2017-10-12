@@ -22,7 +22,7 @@ def render_fahrenheittocelsuis():
 
 @app.route("/inchestocenti")
 def render_inchestocenti():
-    height = float(request.args['height'])
+    height = float(request.args['height'])*2.54
     reply: " Your height in centimeters is" + height
      return render_template('inchestocenti.html', response = reply)
 
