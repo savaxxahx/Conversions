@@ -6,20 +6,20 @@ app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  
 def render_main():
     return render_template('home.html')
     
-@app.route("/DTJ")
+@app.route("/dollarstoyen")
 def render_dollarstoyen():  
     money = float(request.args['money'])*112.15
     reply = "Your amount in Japanese Yen is " + money 
     return render_template('dollarstoyen.html', response = reply)
   
     
-@app.route("/FTC")
+@app.route("/fahrenheittocelsuis")
 def render_fahrenheittocelsuis():
     temp = (float(request.args['temp'])-32)/1.8
     reply = " Your temperature in Celsuis is" + temp
     return render_template('fahrenheittocelsuis.html', response = reply)
 
-@app.route("/ITC")
+@app.route("/inchestocenti")
 def render_inchestocenti():
     height = float(request.args['height'])*2.54
     reply = " Your height in centimeters is" + height
