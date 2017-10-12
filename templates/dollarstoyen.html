@@ -4,13 +4,13 @@
     {% block title %}Convert Dollars to Japanese Yen{% endblock %}
 
 {% block content %}
+  <h1> Convert Dollars To Yen</h1>
     <form action="/dollarstoyen">
       Type in your dollar amount and we'll convert it to yen.<br>
       <input type="number" name="money">
       <br><br>
       <input type="submit">
     </form>
-    <h1> Convert Dollars To Yen</h1>
     <p>{{ response }}</p>
  
  {% endblock %}  
