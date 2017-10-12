@@ -8,24 +8,27 @@ def render_main():
     
 @app.route("/dollarstoyen")
 def render_dollarstoyen(): 
+    reply = "Fire!!!"
     if money in request.args:
-    money = float(request.args['money'])*112.15
-    reply = "Your amount in Japanese Yen is " + money 
+        money = float(request.args['money'])*112.15
+        reply = "Your amount in Japanese Yen is " + money 
     return render_template('dollarstoyen.html', response = reply)
   
     
 @app.route("/fahrenheittocelsuis")
 def render_fahrenheittocelsuis():
+    reply = "Fire!!!"
     if temp in request.args:
-    temp = (float(request.args['temp'])-32)/1.8
-    reply = " Your temperature in Celsuis is" + temp
+        temp = (float(request.args['temp'])-32)/1.8
+        reply = " Your temperature in Celsuis is" + temp
     return render_template('fahrenheittocelsuis.html', response = reply)
 
 @app.route("/inchestocenti")
 def render_inchestocenti():
+    reply = "Fire!!!"
     if height in request.args:
-    height = float(request.args['height'])*2.54
-    reply = " Your height in centimeters is" + height
+        height = float(request.args['height'])*2.54
+        reply = " Your height in centimeters is" + height
     return render_template('inchestocenti.html', response = reply)
 
 
