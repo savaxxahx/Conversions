@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Convert Fahrenheit to Celsuis </title>
-  </head>
-  <body>
+{% extends "layout.html" %}
+{% set active_page = "FTC" %}
 
+    {% block title %}Convert Fahrenheit to Celsuis{% endblock %}
+  
+{% block content %} 
+   
     <form action='/fahrenheittocelsuis'>
       Type in your farenheit temperature and we'll convert it to celsuis.<br>
       <input type="number" name="temp">
@@ -13,5 +13,7 @@
     </form>
       <h1> Convert Fahrenheit To Celsuis</h1>
     <p>{{ response }}</p>
-  </body>
-</html>
+ 
+
+   
+{% endblock %}
